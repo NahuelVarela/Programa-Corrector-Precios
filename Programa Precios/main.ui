@@ -1,0 +1,458 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>462</width>
+    <height>327</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QHBoxLayout" name="horizontalLayout">
+    <item>
+     <widget class="QStackedWidget" name="folio">
+      <property name="currentIndex">
+       <number>0</number>
+      </property>
+      <widget class="QWidget" name="Page0">
+       <layout class="QGridLayout" name="gridLayout">
+        <item row="0" column="0">
+         <widget class="QLabel" name="label">
+          <property name="text">
+           <string>Seleccionar Lista:</string>
+          </property>
+          <property name="buddy">
+           <cstring>entrada</cstring>
+          </property>
+         </widget>
+        </item>
+        <item row="2" column="0">
+         <widget class="QLabel" name="label_3">
+          <property name="text">
+           <string>Salida</string>
+          </property>
+          <property name="buddy">
+           <cstring>salida</cstring>
+          </property>
+         </widget>
+        </item>
+        <item row="0" column="1">
+         <widget class="QLineEdit" name="entrada">
+          <property name="acceptDrops">
+           <bool>true</bool>
+          </property>
+          <property name="dragEnabled">
+           <bool>false</bool>
+          </property>
+          <property name="placeholderText">
+           <string>Seleccione Proveedor</string>
+          </property>
+         </widget>
+        </item>
+        <item row="0" column="2">
+         <widget class="QPushButton" name="buscarEntrada">
+          <property name="text">
+           <string>Buscar</string>
+          </property>
+         </widget>
+        </item>
+        <item row="2" column="1">
+         <widget class="QLineEdit" name="salida">
+          <property name="placeholderText">
+           <string>Seleccione plantilla ML</string>
+          </property>
+         </widget>
+        </item>
+        <item row="2" column="2">
+         <widget class="QPushButton" name="buscarSalida">
+          <property name="text">
+           <string>Buscar</string>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="1">
+         <widget class="QComboBox" name="comboBox">
+          <item>
+           <property name="text">
+            <string>Royaltek</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Fispa</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>RM</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Ferman</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Crifa</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>DER</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Electrodisiel</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>DZE</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Expoyer</string>
+           </property>
+          </item>
+         </widget>
+        </item>
+        <item row="1" column="0">
+         <widget class="QLabel" name="label_2">
+          <property name="text">
+           <string>Marca:</string>
+          </property>
+          <property name="buddy">
+           <cstring>comboBox</cstring>
+          </property>
+         </widget>
+        </item>
+        <item row="3" column="2">
+         <widget class="QPushButton" name="foward_1">
+          <property name="text">
+           <string>Continuar</string>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="2">
+         <widget class="QToolButton" name="toolButton">
+          <property name="text">
+           <string>...</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="page01">
+       <layout class="QGridLayout" name="gridLayout_3">
+        <item row="0" column="0" colspan="2">
+         <widget class="QTableWidget" name="tabla">
+          <property name="alternatingRowColors">
+           <bool>true</bool>
+          </property>
+          <column>
+           <property name="text">
+            <string>SKU</string>
+           </property>
+          </column>
+          <column>
+           <property name="text">
+            <string>Control</string>
+           </property>
+           <property name="background">
+            <color>
+             <red>255</red>
+             <green>172</green>
+             <blue>164</blue>
+            </color>
+           </property>
+          </column>
+          <column>
+           <property name="text">
+            <string>Precio Viejo</string>
+           </property>
+          </column>
+          <column>
+           <property name="text">
+            <string>Precio Nuevo</string>
+           </property>
+           <property name="background">
+            <color>
+             <red>255</red>
+             <green>172</green>
+             <blue>164</blue>
+            </color>
+           </property>
+          </column>
+          <column>
+           <property name="text">
+            <string>Titulo</string>
+           </property>
+          </column>
+         </widget>
+        </item>
+        <item row="1" column="1">
+         <widget class="QPushButton" name="foward_2">
+          <property name="text">
+           <string>Siguiente</string>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="0">
+         <widget class="QPushButton" name="cancel">
+          <property name="text">
+           <string>Cancelar</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="page02">
+       <layout class="QVBoxLayout" name="verticalLayout">
+        <item>
+         <spacer name="verticalSpacer_2">
+          <property name="orientation">
+           <enum>Qt::Vertical</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>20</width>
+            <height>40</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+        <item alignment="Qt::AlignHCenter">
+         <widget class="QLabel" name="label_4">
+          <property name="text">
+           <string>Proceso Terminado</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <spacer name="verticalSpacer">
+          <property name="orientation">
+           <enum>Qt::Vertical</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>20</width>
+            <height>40</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="page03">
+       <layout class="QGridLayout" name="gridLayout_2">
+        <item row="9" column="1">
+         <widget class="QSpinBox" name="spinBox02"/>
+        </item>
+        <item row="9" column="0">
+         <widget class="QLabel" name="label07">
+          <property name="text">
+           <string>Precio:</string>
+          </property>
+          <property name="buddy">
+           <cstring>spinBox02</cstring>
+          </property>
+         </widget>
+        </item>
+        <item row="6" column="1">
+         <widget class="QLabel" name="label05">
+          <property name="text">
+           <string>Formula total:</string>
+          </property>
+         </widget>
+        </item>
+        <item row="0" column="1">
+         <widget class="QComboBox" name="comboBox03">
+          <item>
+           <property name="text">
+            <string>Royaltek</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Fispa</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>RM</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Ferman</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Crifa</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>DER</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Electrodisiel</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Expoyer</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>DZE</string>
+           </property>
+          </item>
+         </widget>
+        </item>
+        <item row="3" column="0">
+         <widget class="QLabel" name="label02">
+          <property name="text">
+           <string>Ganancia:</string>
+          </property>
+          <property name="buddy">
+           <cstring>edit01</cstring>
+          </property>
+         </widget>
+        </item>
+        <item row="4" column="1">
+         <widget class="QLineEdit" name="edit02"/>
+        </item>
+        <item row="10" column="1">
+         <widget class="QSpinBox" name="spinBox03"/>
+        </item>
+        <item row="12" column="0">
+         <widget class="QPushButton" name="btnGuardar">
+          <property name="text">
+           <string>Guardar</string>
+          </property>
+         </widget>
+        </item>
+        <item row="12" column="1">
+         <widget class="QPushButton" name="btnAceptar">
+          <property name="text">
+           <string>Aceptar</string>
+          </property>
+         </widget>
+        </item>
+        <item row="8" column="1">
+         <widget class="QSpinBox" name="spinBox01"/>
+        </item>
+        <item row="0" column="0">
+         <widget class="QLabel" name="label01">
+          <property name="text">
+           <string>Opciones:</string>
+          </property>
+          <property name="buddy">
+           <cstring>comboBox03</cstring>
+          </property>
+         </widget>
+        </item>
+        <item row="10" column="0">
+         <widget class="QLabel" name="label08">
+          <property name="text">
+           <string>Hoja:</string>
+          </property>
+          <property name="buddy">
+           <cstring>spinBox03</cstring>
+          </property>
+         </widget>
+        </item>
+        <item row="5" column="0">
+         <widget class="QLabel" name="label04">
+          <property name="text">
+           <string>Descuento:</string>
+          </property>
+          <property name="buddy">
+           <cstring>edit03</cstring>
+          </property>
+         </widget>
+        </item>
+        <item row="5" column="1">
+         <widget class="QLineEdit" name="edit03"/>
+        </item>
+        <item row="3" column="1">
+         <widget class="QLineEdit" name="edit01"/>
+        </item>
+        <item row="8" column="0">
+         <widget class="QLabel" name="label06">
+          <property name="text">
+           <string>Control:</string>
+          </property>
+          <property name="buddy">
+           <cstring>spinBox01</cstring>
+          </property>
+         </widget>
+        </item>
+        <item row="4" column="0">
+         <widget class="QLabel" name="label03">
+          <property name="text">
+           <string>IVA:</string>
+          </property>
+          <property name="buddy">
+           <cstring>edit02</cstring>
+          </property>
+         </widget>
+        </item>
+        <item row="6" column="0">
+         <widget class="QLabel" name="label_5">
+          <property name="text">
+           <string>Formula:</string>
+          </property>
+         </widget>
+        </item>
+        <item row="11" column="0">
+         <widget class="QLabel" name="label09">
+          <property name="text">
+           <string>Titulo</string>
+          </property>
+         </widget>
+        </item>
+        <item row="11" column="1">
+         <widget class="QSpinBox" name="spinBox04"/>
+        </item>
+       </layout>
+      </widget>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>462</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuOpciones">
+    <property name="title">
+     <string>Opciones</string>
+    </property>
+   </widget>
+   <addaction name="menuOpciones"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
